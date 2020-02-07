@@ -5,6 +5,7 @@ WORKDIR /app
 ADD . /app/
 RUN uname -a
 RUN apt install
+RUN pip3 install requests
 RUN pip3 install flask
 
 EXPOSE 5000
