@@ -3,7 +3,7 @@ FROM python:3.7
 RUN mkdir /app
 WORKDIR /app
 ADD . /app/
-RUN pip install requests
+RUN uname -a
 RUN apt install
 RUN pip3 install flask
 
