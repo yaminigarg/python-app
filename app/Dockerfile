@@ -4,7 +4,8 @@ RUN mkdir /app
 WORKDIR /app
 ADD . /app/
 RUN uname -a
-RUN apt install
+RUN apt install git
+RUN apt install vim
 RUN pip3 install requests
 RUN pip3 install flask
 
